@@ -25,118 +25,54 @@ $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
 function replyMessage($client, $reply_token, $messages) {
 	return $client->replyMessage([
-		'replyToken' => $reply_token,
-		'messages' => $messages
+			'replyToken' => $reply_token,
+			'messages' => $messages
 	]);
 }
 
-foreach ($client->parseEvents() as $event) {
-	if ($event['type'] == 'message') {
-		$message = $event['message'];
-		switch ($message['type']) {
-            case 'text':
-                $client->replyMessage([
-                    'replyToken' => $event['replyToken'],
-                    'messages' => [
-                    	[
-                        	'type' => 'text',
-                                'text' => $message['text']
-                        ]
-                    ]
-                ]);
+foreach ($client->parseEvents() as $event) 
+^   if ($event['type'] == 'message') {
+^   ^   $message = $event['message'];
+^   ^   switch ($message['type']) {
+	case 'text':
+		$client->replyMessage([
+			'replyToken' => $event['replyToken'],
+						'messages' => [
+						^   [
+						^   'type' => 'text',
+						'text' => $message['text']
+						]
+						]
+				]);
 			default:
-                    error_log('Unsupported message type: ' . $message['type']);
-                    break;
-			case 'location':
-				$lat = $locations['latitude'];
-				$lng = $locations['longitude'];
-				$url = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=10589231837c702f&lat=$lat&lng=$lng&range=5&format=json';
-				$ch = curl_init();
-				curl_setopt($ch, CURLOPT_URL, $url);
-				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-				$res = curl_exec($ch);
-				$json = json_decode($res, true);
-				curl_close($ch);
-				$columns = array();
-				foreach ($json->rest as $restaurant) {
-					$columns = array(
-						'thumbnailImageUrl' => $restaurant->image_url->shop_image1,
-						'title' => $restaurant->name,
-						'text' => $restaurant->address,
-						'actions' => array(
-							array(
-								'type' => 'uri',
-								'label' => '詳細',
-								'uri' => $restaurant->url
-							)
-						)
-					);
-				}
-				if ($columns !== null) {
-					$messages = [
-						[
-							'type' => 'template',
-                            'altText' => '周辺の情報',
-							'template' => [
-								'type' => 'carousel',
-								'columns' => [
-									[
-										'imageBackgroundColor' => '#FFFFFF',
-										'title' => $columns[0][title],
-										'text' => $columns[0][text],
-										//位置情報から店舗までの経路案内にリンク予定
-										'actions' => [
-											[
-												'type' => 'uri',
-												'label' => 'サイトへ',
-												'uri'=>$columns[0]['actions'][0]['uri'],
-											]
-										]
-									],
-									[
-										'imageBackgroundColor' => '#FFFFFF',
-										'title' => $columns[1][title],
-										'text' => $columns[1][text],
-										'actions' => [
-											[
-												'type' => 'uri',
-												'label' => 'サイトへ',
-												'uri' => $columns[1]['actions'][0]['uri'],
-											]
-										]
-									],
-									[
-										'imageBackgroundColor' => '#FFFFFF',
-										'title' => $columns[2][title],
-										'text' => $columns[2][text],//リンクにしたい
-										'actions' => [
-											[
-												'type' => 'uri',
-												'label' => 'サイトへ',
-												'uri' => $columns[2]['actions'][0]['uri'],
-											]
-										]
-									]
-								]
-							]
-						]
-					];
-					replyMessage($client, $event['replyToken'], $messages);
-					break;
-				} else {
-					$messages = [
-						[
-							'type' => 'text',
-							'text' => '残念ですが近くにお店が見つかりませんでした。'
-						]
-					];
-					replyMessage($client, $event['replyToken'], $messages);
-					break;
-				}
-			}
-	} else {
-		error_log('Unsupported event type:' . $event['type']);
-		break;
-	}
-};
+				error_log('Unsupported message type: ' . $message['type']);
+				break;
+				^   ^   ^   case 'location':
+					^   ^   ^   ^   $lat = $locations['latitude'];
+				^   ^   ^   ^   $lng = $locations['longitude'];
+				^   ^   ^   ^   $url = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=10589231837c702    f&lat=$lat&lng=$lng&range=5&format=json';
+				^   ^   ^   ^   $ch = curl_init();
+				^   ^   ^   ^   curl_setopt($ch, CURLOPT_URL, $url);
+				^   ^   ^   ^   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+				^   ^   ^   ^   $res = curl_exec($ch);
+				^   ^   ^   ^   $json = json_decode($res, true);
+				^   ^   ^   ^   curl_close($ch);
+				^   ^   ^   ^   for ($i = 0; $i < 6; $i++){
+					^   ^   ^   ^   ^   echo $json['shop'][$i]['urls']['pc'];
+					^   ^   ^   ^   ^   echo $json['results']['shop'][$i]['name'];
+					^   ^   ^   ^   ^   echo $json['results']['shop'][$i]['open'];
+					^   ^   ^   ^   }
+				^   ^   ^   break;
+				^   } else {
+					^   ^   $messages = [
+						^   ^   ^   [
+							^   ^   ^   ^   'type' => 'text',
+						^   ^   ^   ^   'text' => '残念ですが近くにお店が見つかりませんでした。'
+							^   ^   ^   ]
+							^   ^   ];
+					^   ^   replyMessage($client, $event['replyToken'], $messages);
+					^   ^   break;
+					^   }
+	};
 ?>
+
