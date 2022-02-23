@@ -18,19 +18,21 @@
 
 require_once('./LINEBotTiny.php');
 
-$channelAccessToken = 's2bm8BDHU/+eUAaSWtPDyN9e09d3PHUQkb2z75LPwUQi1RQTb+svLT1lHTPfTKoak2z21qBaRdDnIh3JphzC04YsXWODqzu9RMvaSMFuRM/NS6cWCLkBl9NlH9DNONskQUXxYGhPpqloKSaa9NjfhgdB04t89/1O/w1cDnyilFU=';
-$channelSecret = '9da549c997961232db7a95a24535dad8';
+$channelAccessToken = '5X06O+1L1PKV4O0iU7e7ZbdsxSKZJ6QjNRDXy1GwO73J59cONaNy0dANchDiEcAmbwp9wGq1qY04fWA15lgrnhbHEAdTuT5F7Yeezr5zaN/i8WJpopteusAJP5WA4aAGf2dFr/IroClbe3uAPiN0mAdB04t89/1O/w1cDnyilFU=';
+$channelSecret = 'd70ad7bd895d21c84f380b36bab415b8'; 
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
+/*
 function replyMessage($client, $reply_token, $messages) {
 	return $client->replyMessage([
 			'replyToken' => $reply_token,
 			'messages' => $messages
 	]);
 }
+*/
 
-foreach ($client->parseEvents() as $event) 
+foreach ($client->parseEvents() as $event) {
 	^   if ($event['type'] == 'message') {
 		^   ^   $message = $event['message'];
 		^   ^   switch ($message['type']) {
@@ -73,6 +75,6 @@ foreach ($client->parseEvents() as $event)
 					^   ^   replyMessage($client, $event['replyToken'], $messages);
 					^   ^   break;
 					^   }
-	};
+};
 ?>
 
