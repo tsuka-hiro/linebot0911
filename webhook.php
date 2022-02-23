@@ -31,12 +31,12 @@ function replyMessage($client, $reply_token, $messages) {
 }
 
 foreach ($client->parseEvents() as $event) 
-^   if ($event['type'] == 'message') {
-^   ^   $message = $event['message'];
-^   ^   switch ($message['type']) {
-	case 'text':
-		$client->replyMessage([
-			'replyToken' => $event['replyToken'],
+	^   if ($event['type'] == 'message') {
+		^   ^   $message = $event['message'];
+		^   ^   switch ($message['type']) {
+			case 'text':
+				$client->replyMessage([
+						'replyToken' => $event['replyToken'],
 						'messages' => [
 						^   [
 						^   'type' => 'text',
