@@ -23,6 +23,7 @@ use PHPUnit\Framework\TestCase;
 
 class BlockStyleBuilderTest extends TestCase
 {
+
     public function test()
     {
         $json = <<<JSON

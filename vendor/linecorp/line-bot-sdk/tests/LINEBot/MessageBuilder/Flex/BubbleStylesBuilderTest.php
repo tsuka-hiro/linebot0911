@@ -24,6 +24,7 @@ use PHPUnit\Framework\TestCase;
 
 class BubbleStylesBuilderTest extends TestCase
 {
+
     public function test()
     {
         $json = <<<JSON

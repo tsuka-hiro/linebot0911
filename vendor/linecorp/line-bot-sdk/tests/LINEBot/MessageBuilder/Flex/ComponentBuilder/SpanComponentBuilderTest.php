@@ -27,6 +27,7 @@ use LINE\LINEBot\Constant\Flex\ComponentTextStyle;
 
 class SpanComponentBuilderTest extends TestCase
 {
+
     public function test()
     {
         $json = <<<JSON

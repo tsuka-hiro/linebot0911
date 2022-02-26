@@ -8,12 +8,16 @@
     <link rel="icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
-            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -48,25 +52,35 @@
     Menu
 </label>
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-    
-    <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/line.html"><abbr title="\LINE">LINE</abbr></a></h4>
-                <ul class="phpdocumentor-list">
-                                            <li><a href="namespaces/line-laravel.html"><abbr title="\LINE\Laravel">Laravel</abbr></a></li>
-                                            <li><a href="namespaces/line-linebot.html"><abbr title="\LINE\LINEBot">LINEBot</abbr></a></li>
-                                    </ul>
-                        </section>
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/line.html">LINE</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/line-laravel.html">Laravel</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/line-linebot.html">LINEBot</a>
+                
+            </li>
+            </ul>
 
-        <section class="phpdocumentor-sidebar__category">
-        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr title="\Default">Default</abbr></a></h3>
-                                <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/LINE.html"><abbr title="\LINE">LINE</abbr></a></h3>
-                        <ul class="phpdocumentor-list">
-                                    <li><a href="packages/LINE-LINEBot.html"><abbr title="\LINE\LINEBot">LINEBot</abbr></a></li>
-                            </ul>
                         </section>
-    
+                <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/Application.html">Application</a></h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/LINE.html">LINE</a></h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="packages/LINE-LINEBot.html">LINEBot</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+            
     <section class="phpdocumentor-sidebar__category">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
@@ -115,11 +129,11 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">38</span>
-</aside>
+
+    </aside>
 
             <p class="phpdocumentor-summary">A builder class for button component.</p>
 
-    <section class="phpdocumentor-description"></section>
 
 
 
@@ -384,7 +398,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">41</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -393,8 +408,8 @@
     <span class="phpdocumentor-signature__name">$actionBuilder</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -415,7 +430,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">67</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -424,8 +440,8 @@
     <span class="phpdocumentor-signature__name">$adjustMode</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -446,7 +462,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">51</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -455,8 +472,8 @@
     <span class="phpdocumentor-signature__name">$color</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -477,7 +494,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">70</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -486,8 +504,8 @@
     <span class="phpdocumentor-signature__name">$component</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -508,7 +526,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">43</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -517,8 +536,8 @@
     <span class="phpdocumentor-signature__name">$flex</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -539,7 +558,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">53</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -548,8 +568,8 @@
     <span class="phpdocumentor-signature__name">$gravity</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -570,7 +590,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">47</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -579,8 +600,8 @@
     <span class="phpdocumentor-signature__name">$height</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -601,7 +622,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">45</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -610,8 +632,8 @@
     <span class="phpdocumentor-signature__name">$margin</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -632,7 +654,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">60</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -641,8 +664,8 @@
     <span class="phpdocumentor-signature__name">$offsetBottom</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -663,7 +686,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">64</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -672,8 +696,8 @@
     <span class="phpdocumentor-signature__name">$offsetEnd</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -694,7 +718,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">62</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -703,8 +728,8 @@
     <span class="phpdocumentor-signature__name">$offsetStart</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -725,7 +750,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">58</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -734,8 +760,8 @@
     <span class="phpdocumentor-signature__name">$offsetTop</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -756,7 +782,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">56</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -765,8 +792,8 @@
     <span class="phpdocumentor-signature__name">$position</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -787,7 +814,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">49</span>
-</aside>
+
+    </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
@@ -796,8 +824,8 @@
     <span class="phpdocumentor-signature__name">$style</span>
     </code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
+    
     
 
 </article>
@@ -822,7 +850,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">83</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">ButtonComponentBuilder constructor.</p>
 
@@ -830,8 +859,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-TemplateActionBuilder.html"><abbr title="\LINE\LINEBot\TemplateActionBuilder">TemplateActionBuilder</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$actionBuilder</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flex</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentMargin.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentMargin">ComponentMargin</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$margin</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentButtonHeight.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentButtonHeight">ComponentButtonHeight</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$height</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentButtonStyle.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentButtonStyle">ComponentButtonStyle</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$color</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentGravity.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentGravity">ComponentGravity</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$gravity</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -839,56 +867,49 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-TemplateActionBuilder.html"><abbr title="\LINE\LINEBot\TemplateActionBuilder">TemplateActionBuilder</abbr></a>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$flex</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$margin</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentMargin.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentMargin">ComponentMargin</abbr></a>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$height</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentButtonHeight.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentButtonHeight">ComponentButtonHeight</abbr></a>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$style</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentButtonStyle.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentButtonStyle">ComponentButtonStyle</abbr></a>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$color</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$gravity</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentGravity.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentGravity">ComponentGravity</abbr></a>|null</span>
                  = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -897,8 +918,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -915,7 +935,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">298</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Builds button component structure.</p>
 
@@ -923,16 +944,14 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">build</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -949,7 +968,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">106</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Create empty ButtonComponentBuilder.</p>
 
@@ -957,16 +977,14 @@
     <span class="phpdocumentor-signature__visibility">public</span>
             <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">builder</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -983,7 +1001,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">117</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set action.</p>
 
@@ -991,8 +1010,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setAction</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-TemplateActionBuilder.html"><abbr title="\LINE\LINEBot\TemplateActionBuilder">TemplateActionBuilder</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$actionBuilder</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1000,8 +1018,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-TemplateActionBuilder.html"><abbr title="\LINE\LINEBot\TemplateActionBuilder">TemplateActionBuilder</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1010,8 +1027,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1028,7 +1044,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">287</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set adjustMode</p>
 
@@ -1036,8 +1053,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setAdjustMode</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentAdjustMode.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentAdjustMode">ComponentAdjustMode</abbr></a>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$adjustMode</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1045,8 +1061,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentAdjustMode.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentAdjustMode">ComponentAdjustMode</abbr></a>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1055,8 +1070,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">$this</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1073,7 +1087,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">177</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set color.</p>
 
@@ -1081,8 +1096,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setColor</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$color</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1090,8 +1104,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1100,8 +1113,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1118,7 +1130,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">129</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set flex.</p>
 
@@ -1126,8 +1139,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setFlex</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$flex</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1135,8 +1147,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1145,8 +1156,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1163,7 +1173,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">189</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set gravity.</p>
 
@@ -1171,8 +1182,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setGravity</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentGravity.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentGravity">ComponentGravity</abbr></a>|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$gravity</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1180,8 +1190,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentGravity.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentGravity">ComponentGravity</abbr></a>|string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1190,8 +1199,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1208,7 +1216,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">153</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set height.</p>
 
@@ -1216,8 +1225,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setHeight</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentButtonHeight.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentButtonHeight">ComponentButtonHeight</abbr></a>|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$height</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1225,8 +1233,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentButtonHeight.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentButtonHeight">ComponentButtonHeight</abbr></a>|string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1235,8 +1242,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1253,7 +1259,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">141</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set margin.</p>
 
@@ -1261,8 +1268,7 @@
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setMargin</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentMargin.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentMargin">ComponentMargin</abbr></a>|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$margin</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1270,8 +1276,7 @@
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentMargin.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentMargin">ComponentMargin</abbr></a>|string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1280,8 +1285,7 @@
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1298,7 +1302,8 @@
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">239</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set offsetBottom.</p>
 
@@ -1320,8 +1325,7 @@ keyword: none (defined in ComponentSpacing)</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/LINE-LINEBot-Constant-Flex-ComponentSpacing.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentSpacing">ComponentSpacing</abbr></a>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1330,8 +1334,7 @@ keyword: none (defined in ComponentSpacing)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">$this</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1348,7 +1351,8 @@ keyword: none (defined in ComponentSpacing)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">275</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set offsetEnd.</p>
 
@@ -1370,8 +1374,7 @@ keyword: none (defined in ComponentSpacing)</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/LINE-LINEBot-Constant-Flex-ComponentSpacing.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentSpacing">ComponentSpacing</abbr></a>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1380,8 +1383,7 @@ keyword: none (defined in ComponentSpacing)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">$this</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1398,7 +1400,8 @@ keyword: none (defined in ComponentSpacing)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">257</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set offsetStart.</p>
 
@@ -1420,8 +1423,7 @@ keyword: none (defined in ComponentSpacing)</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/LINE-LINEBot-Constant-Flex-ComponentSpacing.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentSpacing">ComponentSpacing</abbr></a>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1430,8 +1432,7 @@ keyword: none (defined in ComponentSpacing)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">$this</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1448,7 +1449,8 @@ keyword: none (defined in ComponentSpacing)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">221</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set offsetTop.</p>
 
@@ -1470,8 +1472,7 @@ keyword: none (defined in ComponentSpacing)</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/LINE-LINEBot-Constant-Flex-ComponentSpacing.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentSpacing">ComponentSpacing</abbr></a>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1480,8 +1481,7 @@ keyword: none (defined in ComponentSpacing)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">$this</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1498,7 +1498,8 @@ keyword: none (defined in ComponentSpacing)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">203</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set position.</p>
 
@@ -1516,8 +1517,7 @@ keyword: none (defined in ComponentSpacing)</p>
                 : <span class="phpdocumentor-signature__argument__return-type">string|<a href="classes/LINE-LINEBot-Constant-Flex-ComponentPosition.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentPosition">ComponentPosition</abbr></a>|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1526,8 +1526,7 @@ keyword: none (defined in ComponentSpacing)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">$this</span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
                     <article
@@ -1544,7 +1543,8 @@ keyword: none (defined in ComponentSpacing)</p>
     <abbr class="phpdocumentor-element-found-in__file" title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php"><a href="files/src-linebot-messagebuilder-flex-componentbuilder-buttoncomponentbuilder.html"><abbr title="src/LINEBot/MessageBuilder/Flex/ComponentBuilder/ButtonComponentBuilder.php">ButtonComponentBuilder.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">165</span>
-</aside>
+
+    </aside>
 
         <p class="phpdocumentor-summary">Set style.</p>
 
@@ -1552,8 +1552,7 @@ keyword: none (defined in ComponentSpacing)</p>
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">setStyle</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentButtonStyle.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentButtonStyle">ComponentButtonStyle</abbr></a>|string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$style</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span></code>
 
-        <section class="phpdocumentor-description"></section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -1561,8 +1560,7 @@ keyword: none (defined in ComponentSpacing)</p>
                 : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/LINE-LINEBot-Constant-Flex-ComponentButtonStyle.html"><abbr title="\LINE\LINEBot\Constant\Flex\ComponentButtonStyle">ComponentButtonStyle</abbr></a>|string|null</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
+                
             </dd>
             </dl>
 
@@ -1571,11 +1569,72 @@ keyword: none (defined in ComponentSpacing)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/LINE-LINEBot-MessageBuilder-Flex-ComponentBuilder-ButtonComponentBuilder.html"><abbr title="\LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder">ButtonComponentBuilder</abbr></a></span>
             &mdash;
-            <section class="phpdocumentor-description"></section>
-
+        
     
 </article>
             </section>
+
+        
+    <script type="text/javascript">
+        function loadExternalCodeSnippets(line) {
+            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+                var language = 'php';
+
+                var code = document.createElement('code');
+                code.className = 'language-' + language;
+
+                pre.textContent = '';
+
+                pre.setAttribute('data-line', line)
+                code.textContent = 'Loading…';
+
+                pre.appendChild(code);
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.open('GET', src, true);
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+
+                            Prism.highlightElement(code);
+                        }
+                        else if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                        }
+                        else {
+                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
+                        }
+                    }
+                };
+
+                xhr.send(null);
+            });
+        }
+
+        var modals = document.querySelectorAll("[data-modal]");
+
+        modals.forEach(function (trigger) {
+            trigger.addEventListener("click", function (event) {
+                //event.preventDefault();
+                const modal = document.getElementById(trigger.dataset.modal);
+                modal.classList.add("phpdocumentor-modal__open");
+                loadExternalCodeSnippets(trigger.dataset.line)
+                const exits = modal.querySelectorAll("[data-exit-button]");
+                exits.forEach(function (exit) {
+                    exit.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        modal.classList.remove("phpdocumentor-modal__open");
+                    });
+                });
+            });
+        });
+    </script>
 
     </article>
                 <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
@@ -1598,5 +1657,9 @@ keyword: none (defined in ComponentSpacing)</p>
     <script>
         cssVars({});
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
 </body>
 </html>

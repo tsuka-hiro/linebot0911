@@ -75,16 +75,11 @@ class StickerMessage extends MessageEvent
      * The keyword selection is random for each event,
      * so different keywords may be returned for the same sticker.
      *
-     * NOTICE:
-     * The keywords property is currently in an experimental phase.
-     * And discontinuation or spec changes may occur in the future.
-     * So this parameter is nullable.
-     *
-     * @return string[]|null
+     * @return string[]
      */
     public function getKeywords()
     {
-        return isset($this->message['keywords']) ? $this->message['keywords'] : null;
+        return $this->message['keywords'];
     }
 
     /**

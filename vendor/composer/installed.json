@@ -2,17 +2,17 @@
     "packages": [
         {
             "name": "linecorp/line-bot-sdk",
-            "version": "7.3.1",
-            "version_normalized": "7.3.1.0",
+            "version": "7.3.0",
+            "version_normalized": "7.3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/line/line-bot-sdk-php.git",
-                "reference": "0500634336ec1b524587a978b917b7b3a3679aef"
+                "reference": "2388ac0af6d9dea9f027e3a78137790f81f699a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/0500634336ec1b524587a978b917b7b3a3679aef",
-                "reference": "0500634336ec1b524587a978b917b7b3a3679aef",
+                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/2388ac0af6d9dea9f027e3a78137790f81f699a2",
+                "reference": "2388ac0af6d9dea9f027e3a78137790f81f699a2",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,7 @@
                 "phpunit/phpunit": "^4.8.36||^5||^6||^7",
                 "squizlabs/php_codesniffer": "~3.5"
             },
-            "time": "2022-01-28T04:12:28+00:00",
+            "time": "2021-11-19T00:28:03+00:00",
             "type": "library",
             "extra": {
                 "laravel": {
@@ -80,7 +80,7 @@
             ],
             "support": {
                 "issues": "https://github.com/line/line-bot-sdk-php/issues",
-                "source": "https://github.com/line/line-bot-sdk-php/tree/7.3.1"
+                "source": "https://github.com/line/line-bot-sdk-php/tree/7.3.0"
             },
             "install-path": "../linecorp/line-bot-sdk"
         }

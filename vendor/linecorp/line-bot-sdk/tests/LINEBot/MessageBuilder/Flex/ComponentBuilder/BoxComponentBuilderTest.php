@@ -34,6 +34,7 @@ use LINE\LINEBot\Constant\Flex\ComponentAlignItems;
 
 class BoxComponentBuilderTest extends TestCase
 {
+
     public function test()
     {
         $result = json_decode(<<<JSON

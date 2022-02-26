@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe96e78b0cf3e0015aa6e722a2d3eb4a",
+    "content-hash": "6111f0c2c7e95a6833ac2b3aa7bf23fe",
     "packages": [
         {
             "name": "linecorp/line-bot-sdk",
-            "version": "7.3.1",
+            "version": "7.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/line/line-bot-sdk-php.git",
-                "reference": "0500634336ec1b524587a978b917b7b3a3679aef"
+                "reference": "2388ac0af6d9dea9f027e3a78137790f81f699a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/0500634336ec1b524587a978b917b7b3a3679aef",
-                "reference": "0500634336ec1b524587a978b917b7b3a3679aef",
+                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/2388ac0af6d9dea9f027e3a78137790f81f699a2",
+                "reference": "2388ac0af6d9dea9f027e3a78137790f81f699a2",
                 "shasum": ""
             },
             "require": {
@@ -83,9 +83,9 @@
             ],
             "support": {
                 "issues": "https://github.com/line/line-bot-sdk-php/issues",
-                "source": "https://github.com/line/line-bot-sdk-php/tree/7.3.1"
+                "source": "https://github.com/line/line-bot-sdk-php/tree/7.3.0"
             },
-            "time": "2022-01-28T04:12:28+00:00"
+            "time": "2021-11-19T00:28:03+00:00"
         }
     ],
     "packages-dev": [],
@@ -94,7 +94,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "7.4.27"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
 }

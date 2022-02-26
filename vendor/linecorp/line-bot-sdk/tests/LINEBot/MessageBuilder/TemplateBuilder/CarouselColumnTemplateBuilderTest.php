@@ -26,6 +26,7 @@ use PHPUnit\Framework\TestCase;
 
 class CarouselColumnTemplateBuilderTest extends TestCase
 {
+
     private static $tests = [
         [
             'param' => ['aaa', 'bbb', 'ccc', ['postback', 'message', 'uri']],
