@@ -23,14 +23,12 @@ $channelSecret = 'd70ad7bd895d21c84f380b36bab415b8';
 
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 
-/*
 function replyMessage($client, $reply_token, $messages) {
 	return $client->replyMessage([
 			'replyToken' => $reply_token,
 			'messages' => $messages
 	]);
 }
-*/
 
 foreach ($client->parseEvents() as $event) {
 	^   if ($event['type'] == 'message') {
