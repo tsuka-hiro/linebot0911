@@ -1,14 +1,11 @@
 {
-    "require": {
-        "linecorp/line-bot-sdk": "7.3",
-	"php": "7.4.27"
-    },
-	"config": {
-		"disable-tls": true,
-		"secure-http": false,
-		"vendor-dir": "data/vendor"
-		"platform": {
-			"php": "7.4.27"
+	"require": {
+		"linecorp/line-bot-sdk": "7.3",
+			"php": "7.4.24"
+	},
+		"config": {
+			"platform": {
+				"php": "7.4.24"
+			}
 		}
-	}
 }
