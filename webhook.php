@@ -42,9 +42,9 @@ foreach ($client->parseEvents() as $event) {
 				error_log('Unsupported message type: ' . $message['type']);
 				break;
 				^   ^   ^   case 'location':
-					^   ^   ^   ^   $lat = $locations['latitude'];
+					^   ^   $lat = $locations['latitude'];
 				^   ^   ^   ^   $lng = $locations['longitude'];
-				^   ^   ^   ^   $url = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=10589231837c702    f&lat=$lat&lng=$lng&range=5&format=json';
+				^   ^   ^   ^   $url = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/?key=6a96f847f3217c94&lat=$lat&lng=$lng&range=5&format=json';
 				^   ^   ^   ^   $ch = curl_init();
 				^   ^   ^   ^   curl_setopt($ch, CURLOPT_URL, $url);
 				^   ^   ^   ^   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -52,10 +52,10 @@ foreach ($client->parseEvents() as $event) {
 				^   ^   ^   ^   $json = json_decode($res, true);
 				^   ^   ^   ^   curl_close($ch);
 				^   ^   ^   ^   for ($i = 0; $i < 6; $i++){
-					^   ^   ^   ^   ^   echo $json['shop'][$i]['urls']['pc'];
-					^   ^   ^   ^   ^   echo $json['results']['shop'][$i]['name'];
-					^   ^   ^   ^   ^   echo $json['results']['shop'][$i]['open'];
-					^   ^   ^   ^   }
+					^   ^   ^   echo $json['shop'][$i]['urls']['pc'];
+					^   ^   ^   echo $json['results']['shop'][$i]['name'];
+					^   ^   ^   echo $json['results']['shop'][$i]['open'];
+					^   ^   }
 				^   ^   ^   break;
 				^   } else {
 					^   ^   $messages = [
@@ -67,6 +67,7 @@ foreach ($client->parseEvents() as $event) {
 					^   ^   replyMessage($client, $event['replyToken'], $messages);
 					^   ^   break;
 					^   }
-};
+		}
+}
 ?>
 
